@@ -47,7 +47,7 @@ const LinkedinIcon = ({ size = 18 }: { size?: number }) => (
 );
 
 // Import images (Vite resolved)
-import avatarImg from './assets/avatar.png';
+import profileImg from './assets/profile.png';
 import realestateImg from './assets/realestate.png';
 import pmSystemImg from './assets/pm_system.png';
 import ecommerceImg from './assets/ecommerce.png';
@@ -479,9 +479,7 @@ export default function App() {
           </h1>
 
           <p className="text-text-muted text-base md:text-lg leading-relaxed max-w-lg">
-Full Stack Developer with 2.5+ years of experience in building scalable web applications, eCommerce platforms, and custom business solutions. Experienced in frontend development using React.js and Next.js, backend development with Python, FastAPI, Django, and Node.js, and database management with MongoDB, MySQL, and PostgreSQL.
-
-Skilled in developing modern web applications, RESTful APIs, AI-powered solutions, WordPress websites, and Shopify stores. Proficient in delivering end-to-end projects, from UI implementation and backend architecture to deployment and maintenance.          </p>
+Full Stack Developer with 2.5+ years of experience building scalable web applications, eCommerce platforms, and business solutions using React.js, Next.js, Python, FastAPI, Django, Node.js, MongoDB, MySQL, PostgreSQL, WordPress, and Shopify. Experienced in developing end-to-end applications, REST APIs, and AI-powered solutions.          </p>
 
           <div className="flex flex-wrap gap-4 pt-2">
             <button
@@ -530,9 +528,9 @@ Skilled in developing modern web applications, RESTful APIs, AI-powered solution
           <div className="w-[180px] h-[180px] md:w-[220px] md:h-[220px] rounded-full bg-gradient-to-tr from-brand-purple to-brand-blue p-[3px] shadow-xl shadow-brand-purple/20 relative z-10">
             <div className="w-full h-full rounded-full overflow-hidden bg-[#050515] flex items-center justify-center">
               <img
-                src={avatarImg}
+                src={profileImg}
                 alt="Neel Khant Avatar"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>
@@ -667,7 +665,7 @@ Skilled in developing modern web applications, RESTful APIs, AI-powered solution
             What I Can Do for You
           </h2>
           <p className="text-text-muted text-sm md:text-base leading-relaxed max-w-sm">
-            Flexible engagement models to fit your project needs.
+            I provide end-to-end digital solutions, including custom web application development, AI-powered solutions, WordPress and Shopify development, API integrations, application maintenance, performance optimization, security enhancements, and ongoing technical support. From concept to deployment, I build scalable and reliable solutions tailored to business needs.
           </p>
         </div>
 
@@ -684,8 +682,14 @@ Skilled in developing modern web applications, RESTful APIs, AI-powered solution
                 Perfect for ongoing work, maintenance, or continuous development.
               </p>
             </div>
-            <div className="text-lg font-bold text-brand-purple pt-2">
-              $20 - $30 / hour
+            <div className="pt-2">
+              <button
+                onClick={() => scrollTo('contact')}
+                className="text-sm font-semibold text-brand-purple hover:text-brand-purple/80 flex items-center space-x-1 cursor-pointer group"
+              >
+                <span>Custom Quote</span>
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
           </div>
 
