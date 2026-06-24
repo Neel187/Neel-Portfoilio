@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-purple: #9d4edd;
+  --color-brand-blue: #3a86ff;
+  --color-brand-cyan: #06d6a0;
+  --color-brand-orange: #f77f00;
+  --color-bg-dark: #02020e;
+  --color-card-dark: #050515;
+  --color-card-border: #14142f;
+  --color-text-muted: #8b8ba7;
+  --font-sans: 'Outfit', 'Inter', sans-serif;
+}
+
+/* Base style resets and customizations */
+body {
+  background-color: #02020a;
+  color: #ffffff;
+  font-family: 'Outfit', 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #02020a;
+}
+::-webkit-scrollbar-thumb {
+  background: #14142f;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #25254f;
+}
+
+/* Custom orbits animation */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 20s linear infinite;
+}
