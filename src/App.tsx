@@ -479,8 +479,9 @@ export default function App() {
           </h1>
 
           <p className="text-text-muted text-base md:text-lg leading-relaxed max-w-lg">
-            I create high-performance, user-friendly websites and web applications using modern technologies. From custom WordPress to full-stack web apps — I help businesses build, scale and grow.
-          </p>
+Full Stack Developer with 2.5+ years of experience in building scalable web applications, eCommerce platforms, and custom business solutions. Experienced in frontend development using React.js and Next.js, backend development with Python, FastAPI, Django, and Node.js, and database management with MongoDB, MySQL, and PostgreSQL.
+
+Skilled in developing modern web applications, RESTful APIs, AI-powered solutions, WordPress websites, and Shopify stores. Proficient in delivering end-to-end projects, from UI implementation and backend architecture to deployment and maintenance.          </p>
 
           <div className="flex flex-wrap gap-4 pt-2">
             <button
