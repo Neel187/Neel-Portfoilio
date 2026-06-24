@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, type ReactElement } from 'react';
 import {
   Mail,
   Phone,
@@ -52,24 +52,8 @@ import realestateImg from './assets/realestate.png';
 import pmSystemImg from './assets/pm_system.png';
 import ecommerceImg from './assets/ecommerce.png';
 
-// Tech Stack - REAL OFFICIAL ICONS from react-icons
-const TechIcons = {
-  React: () => <SiReact className="w-8 h-8 text-[#61DAFB]" />,
-  Nextjs: () => <SiNextdotjs className="w-8 h-8 text-white" />,
-  WordPress: () => <SiWordpress className="w-8 h-8 text-[#21759b]" />,
-  Python: () => <SiPython className="w-8 h-8 text-[#3776AB]" />,
-  Django: () => <SiDjango className="w-8 h-8 text-[#092e20]" />,
-  FastAPI: () => <SiFastapi className="w-8 h-8 text-[#059669]" />,
-  JS: () => <SiJavascript className="w-8 h-8 text-[#F7DF1E]" />,
-  TS: () => <SiTypescript className="w-8 h-8 text-[#3178C6]" />,
-  Tailwind: () => <SiTailwindcss className="w-8 h-8 text-[#38BDF8]" />,
-  MySQL: () => <SiMysql className="w-8 h-8 text-[#00758F]" />,
-  Postgres: () => <SiPostgresql className="w-8 h-8 text-[#336791]" />,
-  MongoDB: () => <SiMongodb className="w-8 h-8 text-[#4DB33D]" />
-};
-
 // Client Brand SVG Logos (complete set with all projects)
-const LogoIcons: Record<string, () => JSX.Element> = {
+const LogoIcons: Record<string, () => ReactElement> = {
   WOLTO: () => (
     <svg className="w-8 h-8 text-[#00d2ff] drop-shadow-[0_0_6px_rgba(0,210,255,0.25)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
       <circle cx="12" cy="12" r="10" />
