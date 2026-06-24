@@ -383,14 +383,16 @@ export default function App() {
   const displayProjects = showAllProjects ? allClientLogos : allClientLogos.slice(0, 10);
 
   return (
-    <div className="min-h-screen bg-[#02020f] text-white overflow-hidden relative selection:bg-brand-purple selection:text-white">
+    <div className="min-h-screen bg-[#02020f] text-white overflow-x-hidden overflow-y-visible relative selection:bg-brand-purple selection:text-white pt-20">
       {/* Background glowing decorations */}
-      <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-brand-purple/10 rounded-full blur-[150px] pointer-events-none" />
-      <div className="absolute top-[40%] right-[-10%] w-[600px] h-[600px] bg-brand-blue/10 rounded-full blur-[180px] pointer-events-none" />
-      <div className="absolute bottom-[-10%] left-[20%] w-[500px] h-[500px] bg-brand-purple/10 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-0 -translate-y-1/2 left-[-10%] w-[500px] h-[500px] bg-brand-purple/10 rounded-full blur-[150px]" />
+        <div className="absolute top-[40%] right-[-10%] w-[600px] h-[600px] bg-brand-blue/10 rounded-full blur-[180px]" />
+        <div className="absolute bottom-0 left-[20%] translate-y-1/2 w-[500px] h-[500px] bg-brand-purple/10 rounded-full blur-[150px]" />
+      </div>
 
       {/* STICKY HEADER & NAVBAR */}
-      <header className="sticky top-0 z-50 bg-[#02020e]/80 backdrop-blur-md border-b border-[#14142f]">
+      <header className="fixed top-0 left-0 right-0 w-full z-50 bg-[#02020e]/80 backdrop-blur-md border-b border-[#14142f]">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => scrollTo('home')}>
